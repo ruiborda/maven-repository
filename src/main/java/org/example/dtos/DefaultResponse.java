@@ -16,13 +16,4 @@ public class DefaultResponse<T> {
     private String code;
     private T data;
     private String[] errors;
-
-    public static DefaultResponse<String> deletedSuccess() {
-        return DefaultResponse.<String>builder()
-                .success(true)
-                .message("Eliminado correctamente")
-                .status(200)
-                .code("DELETED_SUCCESS")
-                .build();
-    }
 }
